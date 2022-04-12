@@ -48,23 +48,45 @@
     cursor: pointer;
 }
 
-.text button:hover{
+.text button:hover {
     background-color: #65bcff;
     transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 890px) {
     .grid{
         grid-template-columns: repeat(2, 1fr);
     }
+    .grid > article{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid > article{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    
 }
 
 @media (max-width: 500px){
     .grid{
+        margin-left: 70px;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .grid > article{
         text-align: center;
+        margin-left: 0px;
     }
 }
